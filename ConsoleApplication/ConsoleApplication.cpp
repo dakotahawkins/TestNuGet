@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "ConsoleApplication.h"
 #include "ApplicationDLL.h"
+#include "CoAppDLL.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -33,6 +34,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 		}
 		else
 		{
+            Print();
             ApplicationDLLPrint();
 			// TODO: code your application's behavior here.
 		}
