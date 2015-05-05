@@ -18,6 +18,17 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ApplicationDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationDLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -27,25 +38,19 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConsoleApplication.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <None Include="ApplicationDLL.def">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConsoleApplication.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    </None>
+    <None Include="res\ApplicationDLL.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="ConsoleApplication.rc">
+    <ResourceCompile Include="ApplicationDLL.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PrintPath.props" />
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>

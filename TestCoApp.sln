@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoAppDLL", "CoAppDLL\CoAppDLL.vcxproj", "{585A89DD-487F-46C3-8EBA-0DA215B8A98D}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.vcxproj", "{A90CBA07-5387-40E1-8359-81899F8CA484}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplicationDLL", "ApplicationDLL\ApplicationDLL.vcxproj", "{9D496061-6D29-4AAC-A101-2C6156F43313}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +13,14 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{585A89DD-487F-46C3-8EBA-0DA215B8A98D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{585A89DD-487F-46C3-8EBA-0DA215B8A98D}.Release|Win32.ActiveCfg = Release|Win32
 		{A90CBA07-5387-40E1-8359-81899F8CA484}.Debug|Win32.ActiveCfg = Debug|Win32
 		{A90CBA07-5387-40E1-8359-81899F8CA484}.Debug|Win32.Build.0 = Debug|Win32
 		{A90CBA07-5387-40E1-8359-81899F8CA484}.Release|Win32.ActiveCfg = Release|Win32
 		{A90CBA07-5387-40E1-8359-81899F8CA484}.Release|Win32.Build.0 = Release|Win32
+		{9D496061-6D29-4AAC-A101-2C6156F43313}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D496061-6D29-4AAC-A101-2C6156F43313}.Debug|Win32.Build.0 = Debug|Win32
+		{9D496061-6D29-4AAC-A101-2C6156F43313}.Release|Win32.ActiveCfg = Release|Win32
+		{9D496061-6D29-4AAC-A101-2C6156F43313}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
