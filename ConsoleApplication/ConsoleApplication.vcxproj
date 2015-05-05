@@ -43,7 +43,7 @@
     <Import Project="PrintPath.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <NuGetPackageImportStamp>a2c275f7</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>ce6df10b</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -103,7 +103,6 @@
     <ResourceCompile Include="ConsoleApplication.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="PrintPath.props" />
   </ItemGroup>
   <ItemGroup>
@@ -112,15 +111,5 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\CoAppDLL.redist.1.0\build\native\CoAppDLL.redist.targets" Condition="Exists('..\packages\CoAppDLL.redist.1.0\build\native\CoAppDLL.redist.targets')" />
-    <Import Project="..\packages\CoAppDLL.1.0\build\native\CoAppDLL.targets" Condition="Exists('..\packages\CoAppDLL.1.0\build\native\CoAppDLL.targets')" />
-  </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\CoAppDLL.redist.1.0\build\native\CoAppDLL.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CoAppDLL.redist.1.0\build\native\CoAppDLL.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\CoAppDLL.1.0\build\native\CoAppDLL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CoAppDLL.1.0\build\native\CoAppDLL.targets'))" />
-  </Target>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>
