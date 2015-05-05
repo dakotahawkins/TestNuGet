@@ -46,6 +46,7 @@
     <None Include="res\ApplicationDLL.rc2">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ApplicationDLL.rc">
