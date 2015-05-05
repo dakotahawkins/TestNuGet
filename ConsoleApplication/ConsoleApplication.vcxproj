@@ -43,7 +43,7 @@
     <Import Project="PrintPath.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <NuGetPackageImportStamp>700b7d1f</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>a2c275f7</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
