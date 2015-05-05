@@ -1,0 +1,35 @@
+nuget{
+	nuspec {
+		id = CoAppDLL;
+		version : 1.0;
+		title: CoAppDLL;
+		authors: {Dakota Hawkins};
+		owners: {Dakota Hawkins};
+		licenseUrl: "http://dakotahawkins.com";
+		projectUrl: "http://dakotahawkins.com";
+		iconUrl: "http://dakotahawkins.com";
+		requireLicenseAcceptance:false;
+		summary:Prints a greeting message;
+
+		description: @"This is CoAppDLL, a library that prints
+		a greeting message and that's pretty much it.";
+		releaseNotes: "Version 1.0.";
+		copyright: Copyright 2015;
+		tags: { native };
+	}
+	files {
+		include: .\CoAppDLL.h;
+
+		[v120,Win32,Debug,dynamic] {
+			lib: .\Debug\CoAppDLL.lib;
+			symbols: .\Debug\CoAppDLL.pdb;
+			bin: .\Debug\CoAppDLL.dll;
+		}
+
+		[v120,Win32,Release,dynamic] {
+			lib: .\Release\CoAppDLL.lib;
+			symbols: .\Release\CoAppDLL.pdb;
+			bin: .\Release\CoAppDLL.dll;
+		}
+	}
+}

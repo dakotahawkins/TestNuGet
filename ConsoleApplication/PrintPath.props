@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Path_Before_CoAppDLL_redist_init_2" BeforeTargets="CoAppDLL_redist_init_2">
+        <Message Text="PATH:" />
+        <Message Text="    $(PATH)" />
+    </Target>
+    <Target Name="Path_After_CoAppDLL_redist_init_2" AfterTargets="CoAppDLL_redist_init_2">
+        <Message Text="PATH:" />
+        <Message Text="    $(PATH)" />
+    </Target>
+</Project>
